@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DiyalogCarthageDeneme" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H0k-Rh-V8w">
+                                <rect key="frame" x="148.5" y="432.5" width="117" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="StartVideoCall"/>
+                                <connections>
+                                    <action selector="btnStartTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qdc-yc-esV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YeJ-Ra-d0k">
+                                <rect key="frame" x="120" y="787" width="175" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="CancelVideoCall"/>
+                                <connections>
+                                    <action selector="buttonCancel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nhd-eR-6RE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Please wait. Our representative will start video call soon." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ea-aF-ueZ">
+                                <rect key="frame" x="43" y="415" width="329" height="67"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YeJ-Ra-d0k" secondAttribute="bottom" constant="44" id="6XL-KU-Mr0"/>
+                            <constraint firstItem="H0k-Rh-V8w" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="7z3-8P-kKs"/>
+                            <constraint firstItem="8Ea-aF-ueZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9Gn-DA-j3J"/>
+                            <constraint firstItem="H0k-Rh-V8w" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QYW-Ef-VoU"/>
+                            <constraint firstItem="8Ea-aF-ueZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UMN-qF-WWE"/>
+                            <constraint firstItem="8Ea-aF-ueZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="371" id="bWI-U4-4Af"/>
+                            <constraint firstItem="YeJ-Ra-d0k" firstAttribute="centerX" secondItem="H0k-Rh-V8w" secondAttribute="centerX" id="cYJ-Ev-YOu"/>
+                            <constraint firstItem="YeJ-Ra-d0k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="d2h-5R-vap"/>
+                            <constraint firstItem="8Ea-aF-ueZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="43" id="wby-hw-skz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnCancel" destination="YeJ-Ra-d0k" id="ZcQ-X2-bwI"/>
+                        <outlet property="btnStart" destination="H0k-Rh-V8w" id="16j-Ds-wCN"/>
+                        <outlet property="lblWait" destination="8Ea-aF-ueZ" id="GK2-Yp-2os"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="79.6875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
