@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     override init(){
         super.init();
-        
+
         DiyalogEngine.diyalogInstance().endpoints = ["wss://<YOUR_DIYALOG_SERVER>"]
 
         //Diyalog Test App
@@ -31,7 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         ]
         
         
-        DiyalogEngine.diyalogInstance().setappName("<YOUR_APP_NAME")
+        DiyalogEngine.diyalogInstance().setappName("<YOUR_APP_NAME>")
         DiyalogEngine.diyalogInstance().setLocalizationLanguage(.turkish)
         DiyalogEngine.diyalogInstance().setenableCalls(true)
         

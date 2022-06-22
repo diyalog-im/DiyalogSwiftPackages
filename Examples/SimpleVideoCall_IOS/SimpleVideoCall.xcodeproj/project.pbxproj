@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2021900A2862F2360001DF6D /* DiyalogSwiftPackages in Frameworks */ = {isa = PBXBuildFile; productRef = 202190092862F2360001DF6D /* DiyalogSwiftPackages */; };
 		209C4CED2774E94C009AB365 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209C4CEC2774E94C009AB365 /* AppDelegate.swift */; };
 		209C4CEF2774E94C009AB365 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209C4CEE2774E94C009AB365 /* SceneDelegate.swift */; };
 		209C4CF12774E94C009AB365 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209C4CF02774E94C009AB365 /* ViewController.swift */; };
@@ -44,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2021900A2862F2360001DF6D /* DiyalogSwiftPackages in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +107,9 @@
 			dependencies = (
 			);
 			name = SimpleVideoCall;
+			packageProductDependencies = (
+				202190092862F2360001DF6D /* DiyalogSwiftPackages */,
+			);
 			productName = DiyalogCarthageDeneme;
 			productReference = 209C4CE92774E94C009AB365 /* SimpleVideoCall.app */;
 			productType = "com.apple.product-type.application";
@@ -133,6 +138,9 @@
 				Base,
 			);
 			mainGroup = 209C4CE02774E94C009AB365;
+			packageReferences = (
+				202190082862F2360001DF6D /* XCRemoteSwiftPackageReference "DiyalogSwiftPackages" */,
+			);
 			productRefGroup = 209C4CEA2774E94C009AB365 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -384,6 +392,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		202190082862F2360001DF6D /* XCRemoteSwiftPackageReference "DiyalogSwiftPackages" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/diyalog-im/DiyalogSwiftPackages";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		202190092862F2360001DF6D /* DiyalogSwiftPackages */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 202190082862F2360001DF6D /* XCRemoteSwiftPackageReference "DiyalogSwiftPackages" */;
+			productName = DiyalogSwiftPackages;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 209C4CE12774E94C009AB365 /* Project object */;
 }

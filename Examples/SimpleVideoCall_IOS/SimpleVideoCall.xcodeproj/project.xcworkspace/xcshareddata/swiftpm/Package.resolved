@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "DiyalogSwiftPackages",
+        "repositoryURL": "https://github.com/diyalog-im/DiyalogSwiftPackages",
+        "state": {
+          "branch": "main",
+          "revision": "d2ea87d9b68c6ddf99b7a2c0a5f239c53230f05d",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
