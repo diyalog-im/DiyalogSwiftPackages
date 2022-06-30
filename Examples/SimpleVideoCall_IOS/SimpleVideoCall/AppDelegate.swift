@@ -16,30 +16,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     override init(){
         super.init();
 
-        DiyalogEngine.diyalogInstance().endpoints = ["wss://<YOUR_DIYALOG_SERVER>"]
+        DiyalogEngine.diyalogInstance().endpoints = ["wss://diyalog.im"]
 
         //Diyalog Test App
-        DiyalogEngine.diyalogInstance().apiId = <YOUR_APP_API_ID>
-        DiyalogEngine.diyalogInstance().apiKey = "<YOUR_APP_API_KEY>"
-        DiyalogEngine.diyalogInstance().trustedKeys = [
-            "<YOUR_DIYALOG_ENVIRONMENT_PUBLIC_KEY_1>",
-            "<YOUR_DIYALOG_ENVIRONMENT_PUBLIC_KEY_2>",
-            "<YOUR_DIYALOG_ENVIRONMENT_PUBLIC_KEY_3>",
-            "<YOUR_DIYALOG_ENVIRONMENT_PUBLIC_KEY_4>",
-            "<YOUR_DIYALOG_ENVIRONMENT_PUBLIC_KEY_5>",
-            "<YOUR_DIYALOG_ENVIRONMENT_PUBLIC_KEY_6>"
-        ]
+        DiyalogEngine.diyalogInstance().apiId = 241
+        DiyalogEngine.diyalogInstance().apiKey = "454a6c44456930373243414a303746630564f4c7979707a46b55426d4f4c7772"
         
-        
-        DiyalogEngine.diyalogInstance().setappName("<YOUR_APP_NAME>")
+        DiyalogEngine.diyalogInstance().setappName("Deneme")
         DiyalogEngine.diyalogInstance().setLocalizationLanguage(.turkish)
         DiyalogEngine.diyalogInstance().setenableCalls(true)
         
         DiyalogEngine.diyalogInstance().setisSupportBackButton(true)
         
         DiyalogEngine.diyalogInstance().createDiyalog()
+      
                 
     }
+    
+    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
