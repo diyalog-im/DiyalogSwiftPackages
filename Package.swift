@@ -26,8 +26,8 @@ let package = Package(
             dependencies: ["DiyalogSwiftPackages"]),
         .binaryTarget(
             name: "DiyalogEngine",
-            url: "https://diyalog.im/releases/DiyalogEngine/5.4.0/DiyalogEngine.zip",
-            checksum: "e34932c8c322649590872a73eb821a7e886c255d7b92d04223f80c1271bf2fdf"
+            url: "https://diyalog.im/releases/DiyalogEngine/5.5.0/DiyalogEngine.zip",
+            checksum: "6ac500ed4b3b8bb55b59bf51f63e0018dd69a8963bfb53586898e766f8411cbb"
         ),
         .binaryTarget(
             name: "j2objc",
