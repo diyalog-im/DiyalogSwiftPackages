@@ -31,8 +31,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "j2objc",
-            url: "https://diyalog.im/releases/j2objc/1.0.3/j2objc.zip",
-            checksum: "7c6dc3a9050534bbe63905a91d0da57eeb078f4b41a3660324c709de9bbe9ba9"
+            url: "https://diyalog.im/releases/j2objc/1.0.4/j2objc.zip",
+            checksum: "fc13fd600ca5292a33dfa7ded17abd344e2459eb63f7a546cb968bda38fbc08c"
         ),
         .binaryTarget(
             name: "WebRTC",

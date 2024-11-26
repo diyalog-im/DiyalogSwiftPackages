@@ -1,16 +1,15 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "DiyalogSwiftPackages",
-        "repositoryURL": "https://github.com/diyalog-im/DiyalogSwiftPackages",
-        "state": {
-          "branch": "main",
-          "revision": "d2ea87d9b68c6ddf99b7a2c0a5f239c53230f05d",
-          "version": null
-        }
+  "originHash" : "11bc21e4c52967f0f631ef5a109f6f67df29c0f9b619bd428675000bf69e4da2",
+  "pins" : [
+    {
+      "identity" : "diyalogswiftpackages",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/diyalog-im/DiyalogSwiftPackages",
+      "state" : {
+        "branch" : "main",
+        "revision" : "b8a571c2c24acf2de934fb86d39ee12096635712"
       }
-    ]
-  },
-  "version": 1
+    }
+  ],
+  "version" : 3
 }
