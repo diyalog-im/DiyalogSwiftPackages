@@ -26,13 +26,13 @@ let package = Package(
             dependencies: ["DiyalogSwiftPackages"]),
         .binaryTarget(
             name: "DiyalogEngine",
-            url: "https://diyalog.im/releases/DiyalogEngine/5.7.2/DiyalogEngine.zip",
-            checksum: "b5b14900e2bdd1e54e2fa9220b8765096e2dbf8751ee58653e1ac07205835fca"
+            url: "https://diyalog.im/releases/DiyalogEngine/5.9.0/DiyalogEngine.zip",
+            checksum: "5c1e794cd116f86c4d8bc356f53aa2b9dccbed991e901df3b5051144daee44db"
         ),
         .binaryTarget(
             name: "j2objc",
-            url: "https://diyalog.im/releases/j2objc/1.0.5/j2objc.zip",
-            checksum: "659f1b90df7b16b6e0cc5c62f209815dc6e0dd387309bc2d1b33ab8eb6cf798b"
+            url: "https://diyalog.im/releases/j2objc/2.0.0/j2objc.zip",
+            checksum: "da5a0260768b0ae8282632c242ac4c91b6fc02893acef2164ee5cf9c1d95c259"
         ),
         .binaryTarget(
             name: "WebRTC",
