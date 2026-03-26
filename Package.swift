@@ -27,7 +27,7 @@ let package = Package(
         .binaryTarget(
             name: "DiyalogEngine",
             url: "https://diyalog.im/releases/DiyalogEngine/5.13.0/DiyalogEngine.zip",
-            checksum: "841376d0588d1b68956ccd4c3734bc86ede3924a1bb20cd1e196dbb2a3ed6a00"
+            checksum: "4c6fb518ccd294a36224a2a26d473e406b10075ac1ae68a71224858f2aea531c"
         ),
         .binaryTarget(
             name: "j2objc",
