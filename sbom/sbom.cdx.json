@@ -1,0 +1,101 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "serialNumber": "urn:uuid:be61721a-24da-41f9-a2f0-6c361fa622e8",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-07-23T00:00:00Z",
+    "tools": {
+      "components": [
+        {
+          "type": "application",
+          "author": "Claude Code",
+          "name": "manual-spm-package-analysis",
+          "version": "1.0.0"
+        }
+      ]
+    },
+    "component": {
+      "bom-ref": "1-DiyalogSwiftPackages",
+      "type": "application",
+      "name": "DiyalogSwiftPackages",
+      "purl": "pkg:swift/github.com/diyalog-im/DiyalogSwiftPackages@main"
+    }
+  },
+  "components": [
+    {
+      "bom-ref": "3-j2objc@2.0.0",
+      "type": "library",
+      "name": "j2objc",
+      "version": "2.0.0",
+      "description": "Java-to-Objective-C transpiler runtime, distributed as a prebuilt binary XCFramework (SPM binaryTarget).",
+      "purl": "pkg:generic/j2objc@2.0.0?download_url=https://diyalog.im/releases/j2objc/2.0.0/j2objc.zip",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "da5a0260768b0ae8282632c242ac4c91b6fc02893acef2164ee5cf9c1d95c259"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://diyalog.im/releases/j2objc/2.0.0/j2objc.zip"
+        }
+      ]
+    },
+    {
+      "bom-ref": "4-WebRTC@1.1.2941",
+      "type": "library",
+      "name": "WebRTC",
+      "version": "1.1.2941",
+      "description": "WebRTC media engine, distributed as a prebuilt binary XCFramework (SPM binaryTarget).",
+      "purl": "pkg:generic/WebRTC@1.1.2941?download_url=https://diyalog.im/releases/WebRTC/1.1.2941/WebRTC.zip",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "9c5caa090782eefb518889d80afb6dad2311af132c8b0e89997777ff9d63ebbc"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://diyalog.im/releases/WebRTC/1.1.2941/WebRTC.zip"
+        }
+      ]
+    },
+    {
+      "bom-ref": "5-opus@1.3",
+      "type": "library",
+      "name": "opus",
+      "version": "1.3",
+      "description": "Opus audio codec library, distributed as a prebuilt binary XCFramework (SPM binaryTarget).",
+      "purl": "pkg:generic/opus@1.3?download_url=https://diyalog.im/releases/opus/1.3/opus.zip",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "adc7b8a7427ed9d81f1d67f861313574aaa913522495fb000f5f3be81c92fbeb"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://diyalog.im/releases/opus/1.3/opus.zip"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "1-DiyalogSwiftPackages",
+      "dependsOn": [
+        "3-j2objc@2.0.0",
+        "4-WebRTC@1.1.2941",
+        "5-opus@1.3"
+      ]
+    },
+    { "ref": "3-j2objc@2.0.0" },
+    { "ref": "4-WebRTC@1.1.2941" },
+    { "ref": "5-opus@1.3" }
+  ]
+}
