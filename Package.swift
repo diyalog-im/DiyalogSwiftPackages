@@ -41,8 +41,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "opus",
-            url: "https://diyalog.im/releases/opus/1.3/opus.zip",
-            checksum: "adc7b8a7427ed9d81f1d67f861313574aaa913522495fb000f5f3be81c92fbeb"
+            url: "https://diyalog.im/releases/opus/1.4/opus.zip",
+            checksum: "dcc77a8163b84bb1d4d8504ec4e3a6348168bdd04e76a24e9867d53f4ab77331"
         )
     ]
 )
